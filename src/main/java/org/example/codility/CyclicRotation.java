@@ -3,7 +3,7 @@ package org.example.codility;
 public class CyclicRotation {
     public int[] solution(int[] A, int K) {
         int[] rsArray = new int[A.length];
-        if(A.length==0)
+        if(A.length>1)
             return rsArray;
         if(K>A.length){
             K=K%A.length;
